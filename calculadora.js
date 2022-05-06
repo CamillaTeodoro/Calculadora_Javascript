@@ -32,7 +32,7 @@ const atualizaVisor = () => {
     return;
   }
   let v = "";
-  c = 0;
+  let c = 0;
   for (let i = parteInteira.length - 1; i >= 0; i--) {
     if (++c > 3) {
       v = "." + v;
