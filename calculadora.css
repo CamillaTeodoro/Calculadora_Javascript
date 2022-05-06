@@ -27,4 +27,5 @@
   font-family: "Helvetica", "Arial", sans-serif;
   font-weight: bold;
   font-size: 16pt;
+  min-width: 50px;
 }
