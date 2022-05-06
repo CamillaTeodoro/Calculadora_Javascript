@@ -20,12 +20,12 @@
 
 #calculadora button {
   margin: 5px;
-  height: 3em;
+  height: 2.8em;
+  width: 2.8em;
 }
 
 #calculadora .button-text {
   font-family: "Helvetica", "Arial", sans-serif;
   font-weight: bold;
   font-size: 16pt;
-  min-width: 50px;
 }
