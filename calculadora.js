@@ -1,23 +1,3 @@
-onload = () => {
-  document.querySelector("#bt-0").onclick = () => digito(0);
-  document.querySelector("#bt-1").onclick = () => digito(1);
-  document.querySelector("#bt-2").onclick = () => digito(2);
-  document.querySelector("#bt-3").onclick = () => digito(3);
-  document.querySelector("#bt-4").onclick = () => digito(4);
-  document.querySelector("#bt-5").onclick = () => digito(5);
-  document.querySelector("#bt-6").onclick = () => digito(6);
-  document.querySelector("#bt-7").onclick = () => digito(7);
-  document.querySelector("#bt-8").onclick = () => digito(8);
-  document.querySelector("#bt-9").onclick = () => digito(9);
-  document.querySelector("#bt-comma").onclick = virgula;
-  document.querySelector("#bt-ac").onclick = limpa;
-  document.querySelector("#bt-divide").onclick = () => operador("/");
-  document.querySelector("#bt-times").onclick = () => operador("*");
-  document.querySelector("#bt-minus").onclick = () => operador("-");
-  document.querySelector("#bt-plus").onclick = () => operador("+");
-  document.querySelector("#bt-equals").onclick = calcula;
-};
-
 // Variáveis para armazenarmos o valor, o operador e o estado da calculadora
 let sValor = "0"; // valor que será apresentado no display
 let ehNovoNumero = true; // Indica se o próximo digito será de um novo número
@@ -106,3 +86,21 @@ const calcula = () => {
   valorAnterior = 0;
   atualizaVisor();
 };
+
+document.querySelector("#bt-0").onclick = () => digito(0);
+document.querySelector("#bt-1").onclick = () => digito(1);
+document.querySelector("#bt-2").onclick = () => digito(2);
+document.querySelector("#bt-3").onclick = () => digito(3);
+document.querySelector("#bt-4").onclick = () => digito(4);
+document.querySelector("#bt-5").onclick = () => digito(5);
+document.querySelector("#bt-6").onclick = () => digito(6);
+document.querySelector("#bt-7").onclick = () => digito(7);
+document.querySelector("#bt-8").onclick = () => digito(8);
+document.querySelector("#bt-9").onclick = () => digito(9);
+document.querySelector("#bt-comma").onclick = virgula;
+document.querySelector("#bt-ac").onclick = limpa;
+document.querySelector("#bt-divide").onclick = () => operador("/");
+document.querySelector("#bt-times").onclick = () => operador("*");
+document.querySelector("#bt-minus").onclick = () => operador("-");
+document.querySelector("#bt-plus").onclick = () => operador("+");
+document.querySelector("#bt-equals").onclick = calcula;
